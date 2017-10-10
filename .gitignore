@@ -1,0 +1,11 @@
+wp
+*.swo
+node_modules/
+build/
+.DS_Store/
+/coverage
+coverage.json
+allFiredEvents
+scTopics
+package-lock.json
+.DS_Store
