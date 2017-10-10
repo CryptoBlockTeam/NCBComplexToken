@@ -52,5 +52,10 @@ OBL complex token is designed, based on monerium/smart-contracts implementation 
 
 Using this design token is upgradeable, business logic maintainable and extendable; while providing a fixed address on the blockchain and permanent access to the token bookkeeping.
 
+## Test Results
+
+Following is test results that we have
+
+![OBLComplexToken test results](docs/OBLComplexToken-test-results.png)
 
 #### Copyright &copy; 2017  OrangeBlockLab.

@@ -4,6 +4,28 @@ var SmartController = artifacts.require("./SmartController.sol")
 var BlacklistValidator = artifacts.require("./BlacklistValidator.sol")
 
 contract("OBLComplexToken", (accounts) => {
+  let token
+  let controller
+  before(async function () {
+    token = await OBLToken.deployed()
+    let name = await token.name()
+    let symbol = await token.symbol()
+    let version = await token.version()
+    let decimals = await token.decimals()
+
+    var contractInfo = '';
+    contractInfo ="  " + "-".repeat(40);
+    contractInfo += "\n  " + "Current date is: " + new Date().toLocaleString("en-US", {timeZone: "UTC"});
+    contractInfo += "\n  " + "-".repeat(40);
+    
+    contractInfo += "\n  Token Name: " + name
+    contractInfo += "\n  Token Symbol: " + symbol
+    contractInfo += "\n  Decimals: " + decimals
+    contractInfo += "\n  Version: " + version
+    contractInfo += "\n  " + "=".repeat(40);
+
+    console.log(contractInfo)
+  })
   it("should start with 100 mio tokens", () => {
     return OBLToken.deployed()
       .then(token => token.totalSupply())

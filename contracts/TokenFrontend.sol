@@ -24,6 +24,8 @@ contract TokenFrontend is Ownable {
     string public name;
     string public symbol;
     bytes3 public ticker;
+    
+    string public version = '0.0.1';
 
     // EVENTS
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
