@@ -1,7 +1,7 @@
 /**
  * Frontend protection Smart Contract implementation.
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Licensed under the Apache License, Version 2.0 (the "License").
  * You may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ contract Frontend {
 
 	TokenFrontend public frontend;
 
-    /** 
+    /**
      * @dev Throws if called by any account other than the frontend
      */
     modifier onlyFrontend() {
@@ -27,7 +27,7 @@ contract Frontend {
             _;
     }
 
-    /** 
+    /**
      * @dev Throws if called by any account other than the frontend or direct call
      */
     modifier isFrontend(address caller) {
@@ -35,7 +35,7 @@ contract Frontend {
             _;
     }
 
-    /** 
+    /**
      * @dev Throws if called by any account other than the frontend or owner
      */
     modifier ownerOrFrontend(address own) {

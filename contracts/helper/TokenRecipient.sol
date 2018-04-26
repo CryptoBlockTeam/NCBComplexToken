@@ -1,7 +1,7 @@
 /*
- * TokenRecepient 
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ * TokenRecepient
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Licensed under the Apache License, Version 2.0 (the "License").
  * You may not use this file except in compliance with the License.
@@ -13,10 +13,10 @@
 
 pragma solidity ^0.4.11;
 
-contract TokenRecipient { 
+contract TokenRecipient {
      /**
      * @dev receiveApproval
-     */	
+     */
 	function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData);
 }
 

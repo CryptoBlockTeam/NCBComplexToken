@@ -1,7 +1,7 @@
 /*
- * MintableController 
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ * MintableController
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -30,7 +30,7 @@ contract MintableController is StandardController {
     event DecreaseCap(uint256 amount);
 
     // CONSTRUCTOR
-    function MintableController(address _storage, uint256 initialSupply, uint256 capAmount) StandardController(_storage, initialSupply, capAmount) { 
+    function MintableController(address _storage, uint256 initialSupply, uint256 capAmount) StandardController(_storage, initialSupply, capAmount) {
         // nothing else to do
     }
 

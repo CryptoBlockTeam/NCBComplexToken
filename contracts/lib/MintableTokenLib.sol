@@ -1,7 +1,7 @@
 /*
  * MintableTokenLib
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -24,7 +24,7 @@ library MintableTokenLib {
 
     event Mint(address indexed to, uint256 amount);
     event Burn(address indexed from, uint256 amount);
-    
+
     event IncreaseCap(uint256 amount);
     event DecreaseCap(uint256 amount);
 

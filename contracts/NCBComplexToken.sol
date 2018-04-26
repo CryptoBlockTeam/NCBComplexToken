@@ -1,7 +1,7 @@
 /*
- * OBLComplexToken
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ * NCBComplexToken
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -18,9 +18,9 @@ pragma solidity ^0.4.11;
 
 import "./TokenFrontend.sol";
 
-contract OBLComplexToken is TokenFrontend {
+contract NCBComplexToken is TokenFrontend {
     string public version = '0.0.1';
 
     // Constructor
-    function OBLComplexToken(address _controller, uint256 initialSupply, uint256 capAmount) TokenFrontend("OrangeBlock Complex Token", "OBL", "OBL", initialSupply, capAmount, _controller) {}
+    function NCBComplexToken(address _controller, uint256 initialSupply, uint256 capAmount) TokenFrontend("NewCryptoBlock Complex Token", "NCB", "NCB", initialSupply, capAmount, _controller) {}
 }

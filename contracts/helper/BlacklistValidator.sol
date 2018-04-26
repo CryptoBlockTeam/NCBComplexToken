@@ -1,7 +1,7 @@
 /*
- * BlacklistValidator 
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ * BlacklistValidator
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -34,7 +34,7 @@ contract BlacklistValidator is ValidatorInterface, Ownable {
      * @param _adversary address of _adversary to be baned
      */
     function ban(address _adversary) onlyOwner {
-       blacklist[_adversary] = true; 
+       blacklist[_adversary] = true;
        Ban(_adversary);
     }
 

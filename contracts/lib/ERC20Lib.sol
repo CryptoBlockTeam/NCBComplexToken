@@ -1,7 +1,7 @@
 /*
- * ERC20Lib - ERC20 standard implementation 
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ * ERC20Lib - ERC20 standard implementation
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -113,19 +113,19 @@ library ERC20Lib {
 			spender.receiveApproval(_caller, _value, this, _extraData);
 			return true;
 		}
-	}        
+	}
 
     // EXTERNAL CONSTANT
-    function balanceOf(TokenStorage db, address _owner) 
-        constant 
-        returns (uint256 balance) 
+    function balanceOf(TokenStorage db, address _owner)
+        constant
+        returns (uint256 balance)
     {
         return db.getBalance(_owner);
     }
 
-    function allowance(TokenStorage db, address _owner, address _spender) 
-        constant 
-        returns (uint256 remaining) 
+    function allowance(TokenStorage db, address _owner, address _spender)
+        constant
+        returns (uint256 remaining)
     {
         return db.getAllowed(_owner, _spender);
     }

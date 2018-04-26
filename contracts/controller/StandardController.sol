@@ -1,7 +1,7 @@
 /*
  * StandardController
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -26,11 +26,11 @@ contract StandardController is Ownable, Frontend, Pausable, Protection {
     using ERC20Lib for TokenStorage;
 
     TokenStorage token;
-    
+
     // EVENTS
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
-    
+
     // CONSTRUCTOR
     function StandardController(address _storage, uint256 initialSupply, uint256 capAmount) {
         assert(_storage == 0x0 || initialSupply == 0 || capAmount == 0);
@@ -84,7 +84,7 @@ contract StandardController is Ownable, Frontend, Pausable, Protection {
     function _transferFrom(address _caller, address _from, address _to, uint256 _value) whenNotPaused onlyPayloadSize(3) isFrontend(_caller) returns (bool success) {
         require(_value > 0);
         return token.transferFrom(_caller, _from, _to, _value);
-    }      
+    }
 
     function _approve(address _caller, address _spender, uint256 _value) onlyPayloadSize(2) isFrontend(_caller) returns (bool success) {
         return token.approve(_caller, _spender, _value);

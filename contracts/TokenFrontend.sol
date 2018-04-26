@@ -1,7 +1,7 @@
 /*
  * TokenFrontend
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -24,7 +24,7 @@ contract TokenFrontend is Ownable {
     string public name;
     string public symbol;
     bytes3 public ticker;
-    
+
     string public version = '0.0.1';
 
     // EVENTS
@@ -40,7 +40,7 @@ contract TokenFrontend is Ownable {
         setController(_controller);
 
         if(!controller.increaseCapAmount(_capAmount)) revert();
-        
+
         // mint initial supply
         if (!controller.mint(_initialSupply)) revert();
     }

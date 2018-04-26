@@ -1,7 +1,7 @@
 /*
  * TokenStorageLib
- * 
- * Copyright © 2017 by OrangeBlockLab.
+ *
+ * Copyright © 2018 by NewCryptoBlock.
  *
  * Based on Smart Contract Token System by Monerium
  * https://github.com/monerium/smart-contracts
@@ -52,7 +52,7 @@ library TokenStorageLib {
         self.balances[_from] = self.balances[_from].minus(_amount);
     }
     /**
-     * @dev setAllowed 
+     * @dev setAllowed
      *
      * @param _owner Address of allowed account.
      * @param _spender Address of allowed account.
@@ -109,7 +109,7 @@ library TokenStorageLib {
     }
 
     /**
-     * @dev getAllowed - returns the allowed amount 
+     * @dev getAllowed - returns the allowed amount
      *
      * @param _owner Address of allowed account.
      * @param _spender Address of allowed account.
@@ -118,4 +118,3 @@ library TokenStorageLib {
         return self.allowed[_owner][_spender];
     }
 }
- 
