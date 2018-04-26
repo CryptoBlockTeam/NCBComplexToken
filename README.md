@@ -1,6 +1,6 @@
-# OrangeBlockLab OBL Complex Token
+# NewCryptoBlock NCB Complex Token
 
-This is implementation of ERC20 OBL complex token.
+This is implementation of ERC20 NCB complex token.
 
 Implementation supports also following protections:
 - Pause and Unpause transfers
@@ -11,13 +11,13 @@ Implementation supports also following protections:
 
 Design is modular and upgradable. 
 
-![Our token system design](docs/OBLComplexToken-design.png)
+![Our token system design](docs/NCBComplexToken-design.png)
 
 *Contracts are represented by white boxes and libraries by orange boxes with rounded corners*
 
 ## Implementation
 
-The OBL complex token system is build upon community vetted libraries where possible to minimise the risk of bugs. This implementaion is based on monerium/smart-contracts implementation.
+The NCB complex token system is build upon community vetted libraries where possible to minimise the risk of bugs. This implementaion is based on monerium/smart-contracts implementation.
 
 Additional functionality has been implemented in `MintableTokenLib.sol` and `SmartTokenLib.sol`. This includes minting and burning tokens and defining validators who determine whether token transactions are valid or not.
 
@@ -31,7 +31,7 @@ OBL complex token system takes advantage of this feature to save gas deploying m
   
 ### Token Systems
 
-OBL complex token is designed, based on monerium/smart-contracts implementation token system and implemented using Solidity libraries. A token system is a methodology which aims to separate the token into three modules, providing the means for composable and upgradable tokens, based on MVC industry standard.
+NCB complex token is designed, based on monerium/smart-contracts implementation token system and implemented using Solidity libraries. A token system is a methodology which aims to separate the token into three modules, providing the means for composable and upgradable tokens, based on MVC industry standard.
 
 #### 1. *Frontend*
 
@@ -56,6 +56,6 @@ Using this design token is upgradeable, business logic maintainable and extendab
 
 Following is test results that we have
 
-![OBLComplexToken test results](docs/OBLComplexToken-test-results.png)
+![NCBComplexToken test results](docs/NCBComplexToken-test-results.png)
 
-#### Copyright &copy; 2017  OrangeBlockLab.
+#### Copyright &copy; 2018  NewCryptoBlock.
